@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale converter</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <form>
+        <H1>Convert Weight</H1>
+
+        <input type="number" id="textBox" value="0"><br>
+        <input type="radio" id="toKg" name="unit">
+        <label for="toKg">Lbs ➡ Kg</label><br>
+        <input type="radio" id="toLbs" name="unit">
+        <label for="toLbs">Kg ➡ Lbs</label><br>
+        <input type="radio" id="LbstoG" name="unit">
+        <label for="LbstoG">Lbs ➡ Grams</label><br>
+        <input type="radio" id="GtoLbs" name="unit">
+        <label for="GtoLbs">Grams ➡ Lbs</label><br>
+        <button type="button" onclick="convert()">Submit</button>
+        <p id="result"></p>
+    </form>
+  <script src="index.js"></script>  
+</body>
+</html>

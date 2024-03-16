@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osobní Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/400453dae3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Logo and navigation links-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" alt="logo" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Domů</a></li>
+                    <li><a href="#about">O mě</a></li>
+                    <li><a href="#services">Služby</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><select id="language-select" onchange="changeLanguage(this.value)">
+                        <option value="cz">CZ</option>
+                        <option value="en">EN</option>
+                    </select>
+                    <a href="index-cz.html" id="page-link">Page</a>
+                    </li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hobby Developer</p>
+                <h1>Zdravím,<br> jsem <span>Big P</span>avel <br>z Čech</h1>
+            </div>
+        </div>
+    </div>
+    <!--About section two columns-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">O mě</h1>
+                    <p>Jsem aspirujicí web developer s nově oběvenou vášní pro vzdělevání se a sebezlepšování.                       passion for learning and self-improvement. 
+                       Kromě počítačů miluji yogu, meditace a zahradničení.
+                    </p>
+<!--SWITCHABLE TABS-->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projekty</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML/CSS/Javascipt</span><br>Tato stránka</li>
+                            <li><span>SQL</span><br>
+                                Understanding of relational databases and select queries</li>
+                            <li><span>Marketing Cloud</span><br>
+                                Obecné seznámení se základními funkcemi</li>
+                            <li><span>Masáže</span><br>Certifikovaný masér se znalozstí 
+                                                tlakových bodů pro rychlou úlevu od bolesti  
+                                            (může být úžitečné v kancelářském prostředí)</li>
+                            <li><span>Stable Diffusion</span><br>veškeré ilustrace na této stránce vytvořeny v ComfyUI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="projects">
+                        <ul>
+                            <li><span>Kalkulačka</span><br><a href="#">Dělá matiku</a></li>
+                            <li><span>Digitalní Hodiny</span><br><a href="#">Stroj času</a></li>
+                            <li><span>Stopky</span><br><a href="#">Lapač času</a></li>
+                            <li><span>Generátor náhodných hesel</span><br><a href="#">užitečná záležitost</a></li>
+                            <li><span>Převaděč jednotek a měr</span><br><a href="#">Z liber do !</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--SERVICES-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Moje služby</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aut. 
+                    Provident repudiandae, magni a minima ratione repellendus aliquid quisquam 
+                    ad, placeat natus exercitationem error excepturi, doloribus 
+                    libero necessitatibus ullam ex.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aut. 
+                    Provident repudiandae, magni a minima ratione repellendus aliquid quisquam 
+                    ad, placeat natus exercitationem error excepturi, doloribus 
+                    libero necessitatibus ullam ex.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App design Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aut. 
+                    Provident repudiandae, magni a minima ratione repellendus aliquid quisquam 
+                    ad, placeat natus exercitationem error excepturi, doloribus 
+                    libero necessitatibus ullam ex.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--PORTFOLIO-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/work-1.png" alt="placeholder">
+                <div class="layer">
+                    <H3>Social Media App</H3>
+                    <p>nějaký text sem</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work-2.png" alt="placeholder">
+                <div class="layer">
+                    <H3>Social Media App</H3>
+                    <p>nějaký text sem</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> 
+            <div class="work">
+                <img src="img/work-3.png" alt="placeholder">
+                <div class="layer">
+                    <H3>Social Media App</H3>
+                    <p>nějaký text sem</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!--CONTACT-->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Kontaktujte mne</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="img/00424-644776242.png" download class="btn btn2">Download CV</a>               
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Jméno" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" rows="6" placeholder="Váš Vzkaz"></textarea>
+                    <button type="submit" class="btn btn2">Odeslat</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Pavel. Vyrobeno s <i class="fa-solid fa-heart"></i> by BigP</p>
+    </div>  
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+    <script>
+        var sideMenu = document.getElementById("sideMenu");
+
+        function openMenu(){
+            sideMenu.style.right = "0";
+        }
+        function closeMenu(){
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxwy_EpHuK72feOxYTGp0GfjQCjOTrFeBobACGZLM72xqOmPFCh0VTlkjyoCUce8G6y/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Vzkaz odeslán"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        function changeLanguage(selectedLanguage){
+            var pageUrls = {
+                'en': 'index-en.html',
+                'cz':'index-cz.html'
+            };
+
+            var newPage = pageUrls[selectedLanguage];
+            if (newPage) {
+                window.location.href = newPage;
+            }
+            
+        }
+
+      </script>
+      
+      
+</body>
+</html>

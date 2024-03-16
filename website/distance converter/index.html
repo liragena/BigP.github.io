@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1>Distance converter</h1>
+
+        <input type="number" id="textBox" value="0"><br>
+
+        <input type="radio" id="toMeters" name="unit">
+        <label for="toMeters">feet ➡ meters</label><br>
+        <input type="radio" id="tofeet" name="unit">
+        <label for="tofeet">meters ➡ feet</label><br>
+        <input type="radio" id="FtToCm" name="unit">
+        <label for="FtToCm">feet ➡ cm</label><br>
+        <input type="radio" id="CmToFt" name="unit">
+        <label for="CmToFt">cm ➡ feet</label><br>
+        <button type="button" onclick="convert()">Submit</button>
+        <p id="result">
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
